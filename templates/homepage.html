@@ -1,0 +1,24 @@
+{% load static %}
+
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="shortcut icon" href="https://cdn.jotfor.ms/favicon.ico">
+	<title>Vasavi Health Care</title>
+</head>
+
+<body>
+	<center>
+		<img src="logo.gif" alt="Vasavi" height="300" width="350">
+		<br><br><br><br>
+		<h1 style="text-align: center"> VASAVI HEALTH CARE </h1>
+		<br><br><br><br>
+		<form action="{% url 'google_login' %}">
+            {% csrf_token %}
+			<input type="image" src="{% static 'button.png' %}"/>
+		</form>
+	</center>
+</body>
+
+</html>
